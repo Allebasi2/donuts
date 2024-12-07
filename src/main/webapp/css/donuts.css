@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+header {
+    background-color: #ff9a8b;
+    padding: 8px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 140px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.input {
+    padding: 10px 20px;
+    border-radius: 30px; /* Borda arredondada */
+    border: 1px solid #ddd; /* Borda suave */
+    width: 300px; /* Tamanho do input */
+    background-color: #f1f1f1; /* Cor de fundo suave */
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input::placeholder {
+    color: #888; /* Cor suave para o texto de placeholder */
+}
+
+.input:focus {
+    border-color: #ff6f61; /* Cor da borda ao focar */
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5); /* Efeito de foco com sombra suave */
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff4f3f;
+}
+
+/* Título */
+.container-titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-titulo h1 a {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px 22px;
+    border: 1px solid #ff6f61; /* Borda do botão Voltar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative; /* Torna possível o deslocamento em relação à posição normal */
+    top: -24px; /* Move o botão 10px para cima */
+}
+
+.container-titulo h1 a:hover {
+    background-color: #ff6f61; /* Cor de fundo quando passar o mouse */
+    color: white; /* Texto branco quando hover */
+    border-color: #ff6f61; /* A borda também muda para combinar com a cor de fundo */
+    box-shadow: 0 6px 15px rgba(255, 111, 97, 0.5); /* Efeito de sombra mais intenso */
+}
+
+/* Seção Conteúdo Donuts */
+.conteudo-pizza {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container-conteudo-pizza {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-conteudo-pizza {
+    flex: 1;
+    max-width: 500px;
+    margin: 15px;
+    text-align: center;
+}
+
+.item-conteudo-pizza img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-conteudo-pizza img:hover {
+    transform: scale(1.05); /* Efeito de zoom na imagem */
+}
+
+.titulo-conteudo h1 {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin: 20px 0;
+}
+
+.item-descricao-pizza p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.item-pizza-preco h1 {
+    font-size: 1.5rem;
+    color: #ff6f61;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4f3f;
+}
+
+/* Rodapé */
+footer.rodape {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-rodape {
+    margin-bottom: 10px;
+}
+
+.item-rodape img {
+    width: 100px;
+    margin-top: 10px;
+}
